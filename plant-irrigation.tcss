@@ -1,0 +1,31 @@
+PumpListItem {
+  margin: 1;
+  background: $panel;
+  padding: 1;
+  align-vertical: middle;
+}
+
+PlantContainer {
+  padding: 1 2;
+  border: round #498040;
+  margin: 0 5;
+}
+
+.plant-title {
+  height: 2;
+  color: #67ec6a;
+}
+
+#main-container {
+  margin: 1 0;
+}
+
+Button {
+  margin-top: 3;
+  margin-right: 5;
+}
+
+.watering Button {
+  border: $primary;
+  background: $primary;
+}

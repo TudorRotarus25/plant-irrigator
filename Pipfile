@@ -1,0 +1,14 @@
+[[source]]
+url = "https://tudorrotarus:APAsvsfkizZQQrXiy9rdMxDbmNy@artifactory.skyscannertools.net/artifactory/api/pypi/pypi/simple"
+verify_ssl = true
+name = "pip_conf_index_global"
+
+[packages]
+textual = "*"
+
+[dev-packages]
+gpiosimulator = "*"
+textual-dev = "*"
+
+[requires]
+python_version = "3.11"
