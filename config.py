@@ -2,6 +2,7 @@ from typing import TypedDict, List, Dict
 
 
 class PlantConfig(TypedDict):
+  id: str
   name: str
   moisture_sensor_id: str
 
@@ -29,10 +30,12 @@ PUMPS_CONFIG: Dict[str, PumpConfig] = {
     "recommended_watering_days": 15,
     "plants": [
       {
+        "id": "orchid",
         "name": "Orchid",
         "moisture_sensor_id": "",
       },
       {
+        "id": "succulent",
         "name": "Succulent",
         "moisture_sensor_id": "",
       },
@@ -46,10 +49,12 @@ PUMPS_CONFIG: Dict[str, PumpConfig] = {
     "recommended_watering_days": 25,
     "plants": [
       {
+        "id": "big-snake",
         "name": "Big Snake Plant",
         "moisture_sensor_id": "",
       },
       {
+        "id": "little-snake",
         "name": "Little Snake Plant",
         "moisture_sensor_id": "",
       },
@@ -63,10 +68,12 @@ PUMPS_CONFIG: Dict[str, PumpConfig] = {
     "recommended_watering_days": 12,
     "plants": [
       {
+        "id": "fern",
         "name": "Fern",
         "moisture_sensor_id": "",
       },
       {
+        "id": "spider",
         "name": "Spider Plant",
         "moisture_sensor_id": "",
       },
@@ -80,6 +87,7 @@ PUMPS_CONFIG: Dict[str, PumpConfig] = {
     "recommended_watering_days": 26,
     "plants": [
       {
+        "id": "wax-flower",
         "name": "Waxflower",
         "moisture_sensor_id": "",
       },
