@@ -32,12 +32,12 @@ PUMPS_CONFIG: Dict[str, PumpConfig] = {
       {
         "id": "orchid",
         "name": "Orchid",
-        "moisture_sensor_id": "",
+        "moisture_sensor_id": None,
       },
       {
         "id": "succulent",
         "name": "Succulent",
-        "moisture_sensor_id": "",
+        "moisture_sensor_id": "moisture-sensor-2",
       },
     ],
   },
@@ -45,18 +45,18 @@ PUMPS_CONFIG: Dict[str, PumpConfig] = {
     "id": "pump-2",
     "name": "Pump 2",
     "gpio_pin": 12,
-    "seconds_to_run": 5,
+    "seconds_to_run": 10,
     "recommended_watering_days": 25,
     "plants": [
       {
         "id": "big-snake",
         "name": "Big Snake Plant",
-        "moisture_sensor_id": "",
+        "moisture_sensor_id": None,
       },
       {
         "id": "little-snake",
         "name": "Little Snake Plant",
-        "moisture_sensor_id": "",
+        "moisture_sensor_id": "moisture-sensor-1",
       },
     ],
   },
@@ -64,18 +64,18 @@ PUMPS_CONFIG: Dict[str, PumpConfig] = {
     "id": "pump-3",
     "name": "Pump 3",
     "gpio_pin": 13,
-    "seconds_to_run": 5,
+    "seconds_to_run": 20,
     "recommended_watering_days": 12,
     "plants": [
       {
         "id": "fern",
         "name": "Fern",
-        "moisture_sensor_id": "",
+        "moisture_sensor_id": "moisture-sensor-3",
       },
       {
         "id": "spider",
         "name": "Spider Plant",
-        "moisture_sensor_id": "",
+        "moisture_sensor_id": "moisture-sensor-5",
       },
     ],
   },
@@ -83,13 +83,13 @@ PUMPS_CONFIG: Dict[str, PumpConfig] = {
     "id": "pump-4",
     "name": "Pump 4",
     "gpio_pin": 15,
-    "seconds_to_run": 5,
+    "seconds_to_run": 10,
     "recommended_watering_days": 26,
     "plants": [
       {
         "id": "wax-flower",
         "name": "Waxflower",
-        "moisture_sensor_id": "",
+        "moisture_sensor_id": "moisture-sensor-4",
       },
     ],
   },
@@ -98,22 +98,22 @@ PUMPS_CONFIG: Dict[str, PumpConfig] = {
 MOISTURE_SENSORS_CONFIG: Dict[str, MoistureSensorConfig] = {
   "moisture-sensor-1": {
     "id": "moisture-sensor-1",
-    "gpio_pin": 29,
+    "gpio_pin": 16,
   },
   "moisture-sensor-2": {
     "id": "moisture-sensor-2",
-    "gpio_pin": 31,
+    "gpio_pin": 18,
   },
   "moisture-sensor-3": {
     "id": "moisture-sensor-3",
-    "gpio_pin": 33,
+    "gpio_pin": 22,
   },
   "moisture-sensor-4": {
     "id": "moisture-sensor-4",
-    "gpio_pin": 35,
+    "gpio_pin": 7,
   },
   "moisture-sensor-5": {
     "id": "moisture-sensor-5",
-    "gpio_pin": 37,
+    "gpio_pin": 3,
   },
 }
